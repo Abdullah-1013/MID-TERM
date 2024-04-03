@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/52eedade82.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Css/tickets.css">
+    <link rel="stylesheet" href="./Css/media.css">
+    <title>Tickets</title>
+</head>
+
+<body>
+    <header>
+        <div class="social-and-personal-settings">
+            <div class="centered-item">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#">Language</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Signin</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-background">
+            <nav class="centered-item">
+                <div class="branch">
+                    <img src="./Css/Assets/Images/Logo.png" alt="">
+                    <p>PSL</p>
+                    <p>Season 5</p>
+                </div>
+                <input type="checkbox" id="menu"><label for="menu" class="menu-btn"><i class="fas fa-bars"></i></label>
+                <ul class="nav-menu">
+                    <li><a href="./Index.html">Main</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#">Program</a></li>
+                    <li><a href="#">Sponsor</a></li>
+                    <li><a class="tickets-link hidden-ticket" href="./tickets.html">BUY YOUR TICKETS!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Buy yout tickets here!</h1>
+        <div class="centered-item p-border">
+            <h2>Select the amount</h2>
+            <hr>
+            <p><span>Step 1:</span> Select the number of tickets you want</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <button type="button" class="col">Any</button>
+                    <button type="button" class="col">1 Ticket</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="col">2 Ticket</button>
+                    <button type="button" class="col">3 Ticket</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="col">4 Ticket</button>
+                    <button type="button" class="col">+5 Ticket</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="type-of-ticket">
+        <div class="centered-item p-border">
+            <h2>Select your ticket</h2>
+            <hr>
+            <p><span>Step 2:</span> Select the tipe of ticket you want</p>
+            <div class="container-fluid type-of-ticket-border">
+                <div class="row type-of-ticket-background-main">
+                    <p class="col-2">Ticket</p>
+                    <p class="col-3">Normal</p>
+                    <p class="col">Platinum</p>
+                    <p class="col-3">Diamond</p>
+                </div>
+                <div class="row type-of-ticket-background">
+                    <p class="col-2">Benefits</p>
+                    <p class="col-3">None</p>
+                    <p class="col">Snack service</p>
+                    <p class="col">+ Catering</p>
+                    <p class="col-3">+ Meet and greet</p>
+                </div>
+                <div class="row type-of-ticket-background">
+                    <p class="col-2">Season Pass</p>
+                    <div class="col-3">
+                        <p>R$ 449</p>
+                        <input type="radio" name="ticket">
+                    </div>
+                    <div class="col">
+                        <p>R$ 999</p>
+                        <input type="radio" name="ticket">
+                    </div>
+                    <div class="col">
+                        <p>R$ 1799</p>
+                        <input type="radio" name="ticket">
+                    </div>
+                    <div class="col-3">
+                        <p>R$ 2299</p>
+                        <input type="radio" name="ticket">
+                    </div>
+                </div>
+                <div class="row type-of-ticket-background">
+                    <p class="col-2">Battle Pass</p>
+                    <div class="col-3">
+                        <p>R$ 549</p>
+                        <input type="radio" name="ticket">
+                    </div>
+                    <div class="col">
+                        <p>R$ 1199</p>
+                        <input type="radio" name="ticket">
+                    </div>
+                    <div class="col">
+                        <p>R$ 1999</p>
+                        <input type="radio" name="ticket">
+                    </div>
+                    <div class="col-3">
+                        <p>R$ 2599</p>
+                        <input type="radio" name="ticket">
+                    </div>
+                </div>
+            </div>
+            <select name="tickets-small mt-3" id="tickets-small">
+                <option value="normalsp">Normal SP R$449</option>
+                <option value="normalbp">Normal BP R$549</option>
+                <option value="platinumsps">Platinum SP snacks R$999</option>
+                <option value="platinumspc">Platinum BP snacks R$1199</option>
+                <option value="">Platinum SP +catering R$1799</option>
+                <option value="">Platinum BP +catering R$1999</option>
+                <option value="">Diamond SP +Meet and greet R$2299</option>
+                <option value="">Diamond BP +Meet and greet R$2599</option>
+            </select>
+        </div>
+    </div>
+    <section class="p-border centered-item mb-5">
+        <h2>Select your seats</h2>
+        <hr>
+        <p><span>Step 3:</span> Select where you want to be</p>
+        <div class="container seats">
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+                <div class="col seat-background">
+                    <div class="seat-shape"></div>
+                </div>
+            </div>
+            <div class="row players m-auto">
+                <p>Players</p>
+            </div>
+            <div class="row screen mt-3">
+                <p>Screen</p>
+            </div>
+        </div>
+        <select name="row" id="row">
+            <option value="">Row 1</option>
+            <option value="">Row 2</option>
+            <option value="">Row 3</option>
+            <option value="">Row 4</option>
+            <option value="">Row 5</option>
+            <option value="">Row 6</option>
+            <option value="">Row 7</option>
+            <option value="">Row 8</option>
+            <option value="">Row 9</option>
+            <option value="">Row 10</option>
+            <option value="">Row 11</option>
+            <option value="">Row 12</option>
+            <option value="">Row 13</option>
+            <option value="">Row 14</option>
+            <option value="">Row 15</option>
+            <option value="">Row 16</option>
+        </select>
+        <select name="col" id="cel">
+            <option value="">Column A</option>
+            <option value="">Column B</option>
+            <option value="">Column C</option>
+            <option value="">Column D</option>
+            <option value="">Column E</option>
+            <option value="">Column F</option>
+            <option value="">Column G</option>
+            <option value="">Column H</option>
+            <option value="">Column I</option>
+            <option value="">Column J</option>
+            <option value="">Column K</option>
+            <option value="">Column L</option>
+            <option value="">Column M</option>
+            <option value="">Column N</option>
+            <option value="">Column O</option>
+            <option value="">Column P</option>
+            <option value="">Column Q</option>
+            <option value="">Column R</option>
+            <option value="">Column S</option>
+            <option value="">Column T</option>
+            <option value="">Column U</option>
+            <option value="">Column V</option>
+            <option value="">Column W</option>
+            <option value="">Column X</option>
+            <option value="">Column Y</option>
+            <option value="">Column Z</option>
+        </select>
+    </section>
+    <button type="button" class="purchase mb-5">Finish purchase</button>
+    <footer>
+        <div class="centered-item">
+            <div class="d-flex">
+                <img src="./Css/Assets/Images/logo-white.png" alt="">
+                <p>PSL</p>
+            </div>
+            <div>
+                <p>All rigths reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
